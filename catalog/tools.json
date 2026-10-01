@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "last_reviewed": "2026-10-01",
   "status_definitions": {
     "verified": "Canonical repository/source inspected and core description grounded in it.",
@@ -420,6 +420,241 @@
       "status": "verified",
       "verification": "Official Eos Applications product page inspected.",
       "notes": "Commercial military-OSINT platform emphasizing structured intelligence, per-field provenance, NATO-oriented schemas and sovereign/on-prem deployment. The earlier claim that launch is planned for 2027 was not retained because the product is already presented publicly as an active offering.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "argus-cotcollective",
+      "name": "Argus — Local-First OSINT Framework",
+      "url": "https://github.com/cotcollective/argus",
+      "category": [
+        "agentic-osint",
+        "local-first",
+        "zero-api",
+        "mcp"
+      ],
+      "architecture": [
+        "tool-calling-agent",
+        "cli",
+        "mcp-server"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted",
+        "local-model"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "Canonical repository README inspected. Zero-cloud/local Ollama design verified. Module count is internally inconsistent: README headline says 13 while the current module table enumerates 14 entries.",
+      "notes": "Distinct from AXRoux/argus-os. Designed around local inference and mostly keyless/free sources. Exact module count should not be repeated without re-checking the current README.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "osint-mcp-rjn32s",
+      "name": "osint-mcp",
+      "url": "https://github.com/rjn32s/osint-mcp",
+      "category": [
+        "mcp",
+        "tool-fabric",
+        "agentic-osint"
+      ],
+      "architecture": [
+        "mcp-server",
+        "tool-wrapper"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "Canonical GitHub repository and PyPI package inspected; both currently document 26 wrapped OSINT tools and 15 tools usable without an API key.",
+      "notes": "Python MCP package that wraps existing OSINT utilities behind a single MCP server. Active operations remain distinct from passive collection and require operator authorization.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "intelhub-firefox",
+      "name": "IntelHub",
+      "url": "https://addons.mozilla.org/firefox/addon/intelhub/",
+      "category": [
+        "browser-osint",
+        "local-first",
+        "ai-assistant",
+        "file-analysis"
+      ],
+      "architecture": [
+        "browser-extension",
+        "local-agent"
+      ],
+      "protocols": [],
+      "deployment": [
+        "browser",
+        "local-model"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "Mozilla Add-ons listing and version history inspected; v5.0.2 documents a Local OSINT Agent powered through LM Studio.",
+      "notes": "Firefox OSINT extension with local AI chat, local metadata/hash processing and web-search integration. 'No data leaves your machine' applies to local model/chat processing, while live web search necessarily makes network requests.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "s2w-dri",
+      "name": "Deep Research Investigator (DRI)",
+      "url": "https://www.s2w.inc/en/solutions/decision-ai",
+      "category": [
+        "criminal-intelligence",
+        "dark-web-intelligence",
+        "agentic-investigation",
+        "commercial"
+      ],
+      "architecture": [
+        "domain-agent",
+        "knowledge-graph",
+        "analyst-copilot"
+      ],
+      "protocols": [],
+      "deployment": [
+        "commercial-platform"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "Official S2W Decision AI and XARVIS product pages inspected.",
+      "notes": "Domain-specific investigation agent deployed in XARVIS, linking search, graph analysis and profiling to support investigators. Treated as decision support, not as evidence by itself.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "ail-framework",
+      "name": "AIL Framework",
+      "url": "https://github.com/ail-project/ail-framework",
+      "category": [
+        "unstructured-data",
+        "threat-intelligence",
+        "dark-web-research",
+        "multimodal"
+      ],
+      "architecture": [
+        "pipeline",
+        "crawler",
+        "correlation-engine",
+        "analyst-workflow"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "local-ai-optional"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "Canonical AIL repository and official AIL documentation inspected.",
+      "notes": "CIRCL-originated framework for collecting and analyzing unstructured data from web, Tor, I2P, chats, files and feeds. Supports OCR, QR/barcode extraction, correlation, MISP integration and AI-assisted image descriptions; official FAQ documents Qwen2.5-VL for image description.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "shadowbroker-infonet",
+      "name": "ShadowBroker / InfoNet",
+      "url": "https://github.com/brockmisner/shadowbroker",
+      "category": [
+        "situational-awareness",
+        "decentralized-intelligence",
+        "geoint",
+        "experimental-network"
+      ],
+      "architecture": [
+        "real-time-dashboard",
+        "agent-channel",
+        "decentralized-mesh"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "experimental-testnet"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "Canonical repository README inspected; InfoNet is explicitly documented as an experimental testnet with no current privacy guarantee.",
+      "notes": "Aggregates public intelligence feeds and includes the experimental InfoNet decentralized intelligence mesh. Privacy primitives are incomplete; the project itself warns users to treat current channels as public.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "the-big-brother",
+      "name": "The Big Brother",
+      "url": "https://github.com/chadi0x/TheBigBrother",
+      "category": [
+        "osint-suite",
+        "threat-intelligence",
+        "dual-use"
+      ],
+      "architecture": [
+        "web-ui",
+        "modular-suite",
+        "graph"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "docker"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "Canonical repository README inspected. Current public version is V7.0 (NEXUS), not V6.0.",
+      "notes": "Broad OSINT/threat-intelligence suite whose current maintainer documentation advertises 52 engines across 26 tabs. Some capabilities extend beyond passive OSINT into active security testing, so OSINTAI classifies it as dual-use rather than treating all modules as ordinary OSINT.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "novbase-vtx",
+      "name": "NovBase-VTX",
+      "url": "https://huggingface.co/NovBase-VTX",
+      "category": [
+        "swarm",
+        "local-first",
+        "research-project"
+      ],
+      "architecture": [
+        "multi-agent",
+        "swarm",
+        "local-llm"
+      ],
+      "protocols": [],
+      "deployment": [
+        "private-core",
+        "local-model"
+      ],
+      "local_first": true,
+      "status": "candidate",
+      "verification": "Public Hugging Face organization page inspected; core implementation is explicitly private and no public model code is available for independent review.",
+      "notes": "Maintainer describes a five-layer cognitive OSINT architecture with eight parallel units and local synthesis. Treated as a candidate research project because architecture and performance claims cannot yet be independently audited.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "starcom",
+      "name": "Starcom",
+      "url": "https://starcom.app/",
+      "category": [
+        "decentralized-intelligence",
+        "osint",
+        "web3",
+        "experimental-platform"
+      ],
+      "architecture": [
+        "3d-dashboard",
+        "decentralized-network",
+        "agent-integration"
+      ],
+      "protocols": [
+        "Nostr",
+        "IPFS"
+      ],
+      "deployment": [
+        "web",
+        "experimental"
+      ],
+      "local_first": false,
+      "status": "candidate",
+      "verification": "Official Starcom/Archangel Initiative pages inspected. The project page explicitly states the platform is still developing and not yet a fully operational MVP.",
+      "notes": "Experimental decentralized intelligence concept combining 3D visualization, OSINT workflows and decentralized infrastructure. Claims around tokenized intelligence and post-quantum features require feature-level verification before promotion.",
       "last_reviewed": "2026-10-01"
     }
   ]
