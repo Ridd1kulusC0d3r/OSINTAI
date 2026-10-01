@@ -13,11 +13,14 @@
 - [x] learning path
 
 ## v0.2 — Ecosystem Expansion
+- [x] add curated collections catalog
+- [x] add verified training catalog
+- [x] add specialized-domain map
 - [ ] expand verified catalog to 50+ resources
 - [ ] add model and provider taxonomy
-- [ ] add multimodal OSINT resources
-- [ ] add local-first stack matrix
-- [ ] add AI-infrastructure OSINT section
+- [x] add multimodal OSINT resources
+- [x] add local-first stack matrix
+- [x] add AI-infrastructure OSINT section
 - [ ] add MCP server registry import and review process
 - [ ] add freshness automation for last verified dates
 - [ ] add deprecated and archived resource handling

@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "last_reviewed": "2026-10-01",
   "references": [
     {
@@ -81,6 +81,100 @@
         "supply-chain",
         "prompt-injection"
       ]
+    },
+    {
+      "id": "mosaiv-2026",
+      "title": "MOSAIV: Multi-Agent LLM Swarms for Automated Multimedia News Verification: Fake News Detection",
+      "year": 2026,
+      "type": "conference-paper",
+      "url": "https://doi.org/10.1145/3805622.3812607",
+      "doi": "10.1145/3805622.3812607",
+      "topics": [
+        "multi-agent",
+        "multimedia-verification",
+        "geolocation",
+        "osint"
+      ],
+      "verification_status": "verified",
+      "notes": "ICMR 2026 paper; three-stage Prime, Verification and Localization agent workflow evaluated on 10 conflict-zone validation cases."
+    },
+    {
+      "id": "n8n-llm-osint-2026",
+      "title": "Arquitectura modular de flujos automatizados con LLM y OSINT en n8n para aplicaciones de ciberseguridad",
+      "year": 2026,
+      "type": "conference-proceedings",
+      "url": "https://zenodo.org/records/18508499",
+      "topics": [
+        "n8n",
+        "llm",
+        "osint",
+        "automation",
+        "cybersecurity"
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "id": "mitre-attack-osint-nlp-2026",
+      "title": "Automated MITRE ATT&CK Technique Classification Using OSINT and Advanced NLP",
+      "year": 2026,
+      "type": "journal-article",
+      "url": "https://doi.org/10.70917/ijcisim-2026-4916",
+      "doi": "10.70917/ijcisim-2026-4916",
+      "topics": [
+        "cti",
+        "mitre-attack",
+        "nlp",
+        "classification",
+        "osint"
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "id": "cognitive-fingerprint-2026",
+      "title": "The Cognitive Fingerprint: LLM-Resistant Cross-Domain Threat Actor Attribution via Temporal-Syntactic Fusion",
+      "year": 2026,
+      "type": "preprint",
+      "url": "https://doi.org/10.36227/techrxiv.177272729.99887126/v1",
+      "doi": "10.36227/techrxiv.177272729.99887126/v1",
+      "topics": [
+        "attribution",
+        "behavioral-analysis",
+        "dark-web",
+        "llm-resilience"
+      ],
+      "verification_status": "verified-preprint",
+      "notes": "Preprint; reported results should not be treated as independently replicated."
+    },
+    {
+      "id": "fine-tuned-llm-kg-osint-2025",
+      "title": "Open-Source Intelligence Analysis Method Based on Fine-Tuned Large Models and Knowledge Graphs",
+      "year": 2025,
+      "type": "conference-paper",
+      "url": "https://doi.org/10.1109/IAEAC65194.2025.11165922",
+      "doi": "10.1109/IAEAC65194.2025.11165922",
+      "topics": [
+        "knowledge-graph",
+        "fine-tuning",
+        "rag",
+        "osint"
+      ],
+      "verification_status": "verified",
+      "notes": "Published in 2025 conference proceedings and added to IEEE Xplore in 2026; the repository records the publication year as 2025."
+    },
+    {
+      "id": "remote-sensing-osint-mllm-2026",
+      "title": "A Multimodal Large Language Model Approach for Cross-modal Alignment of Remote Sensing Imagery and Open Source Intelligence",
+      "year": 2026,
+      "type": "conference-paper-candidate",
+      "url": "https://eurekamag.com/research/098/677/098677480.php",
+      "topics": [
+        "multimodal",
+        "remote-sensing",
+        "geoint",
+        "osint"
+      ],
+      "verification_status": "candidate",
+      "notes": "Conference-paper metadata was located through secondary indexing; canonical proceedings/DOI still need direct verification."
     }
   ]
 }

@@ -5,7 +5,7 @@
 > A verification-first knowledge base for AI-augmented OSINT, agentic investigation, MCP ecosystems, local-first workflows, evaluation, governance, and OSINT focused on AI infrastructure.
 
 [![Catalog Validation](https://github.com/Ridd1kulusC0d3r/OSINTAI/actions/workflows/validate-catalog.yml/badge.svg)](https://github.com/Ridd1kulusC0d3r/OSINTAI/actions/workflows/validate-catalog.yml)
-![Status](https://img.shields.io/badge/status-v0.1%20foundation-blue)
+![Status](https://img.shields.io/badge/status-v0.2%20ecosystem-blue)
 ![Focus](https://img.shields.io/badge/focus-OSINT%20%2B%20AI-purple)
 
 ## Why this repository exists
@@ -66,21 +66,40 @@ flowchart LR
 | **Evaluation** | reproducibility, hallucination measurement, provenance, security and cost |
 | **Governance** | privacy, proportionality, human oversight, evidence handling, AI risk |
 
+
+## v0.2 ecosystem expansion
+
+OSINTAI now tracks the ecosystem across four machine-readable catalogs:
+
+- **16 verified tools/platforms** in `catalog/tools.json`;
+- **12 research records** in `catalog/research.json`, with candidate status where primary metadata is still incomplete;
+- **5 verified training resources** in `catalog/training.json`;
+- **4 verified curated collections** in `catalog/collections.json`.
+
+The expansion adds local-first crawlers, dark-web research, SOCMINT, GEOINT, tactical intelligence, AI-infrastructure OSINT, MCP threat-intelligence integrations and structured training references.
+
+Start with the full [v0.2 Ecosystem Map](docs/ecosystem-v0.2.md).
+
 ## Verified ecosystem snapshot
 
-The table below contains projects whose repository identity and current description were manually checked for this foundation release.
+The primary catalog now includes 16 verified tools and platforms. A compact cross-section is shown below; the full categorized view is in [docs/ecosystem-v0.2.md](docs/ecosystem-v0.2.md).
 
-| Project | Primary role | AI / agent pattern | MCP | Local-first | Verification |
-|---|---|---|---|---|---|
-| [OpenOSINT](https://github.com/OpenOSINT/OpenOSINT) | AI-assisted investigation toolkit | tool-calling agent | Yes | Optional | README checked |
-| [Taranis AI](https://github.com/taranis-ai/taranis-ai) | OSINT collection + situational analysis | NLP/AI enrichment + analyst workflow | No | Self-hosted | README checked |
-| [PANO](https://github.com/ALW1EZ/PANO) | graph/timeline investigation platform | PANAI assistant | No | Desktop/self-hosted | README checked |
-| [Argus](https://github.com/AXRoux/argus-os) | agentic OSINT orchestration | autonomous tool orchestration | No | Optional | README checked |
-| [osint-mcp-server](https://github.com/badchars/osint-mcp-server) | OSINT tools exposed to agents | MCP tool layer | Yes | Client-dependent | README checked |
-| [MCP DadosBR](https://github.com/cristianoaredes/mcp-dadosbr) | Brazilian public-data OSINT | MCP tool layer | Yes | Client-dependent | README checked |
-| [Focal Harvest](https://github.com/techno-neighbour/focal-harvest) | research + monitoring pipeline | LLM synthesis / collection automation | No | Has offline fallback | README checked |
+| Project | Primary role | Architecture signal | Local-first | Verification |
+|---|---|---|---|---|
+| [OpenOSINT](https://github.com/OpenOSINT/OpenOSINT) | general AI-assisted OSINT | tool-calling agent + MCP | Optional | verified |
+| [Taranis AI](https://github.com/taranis-ai/taranis-ai) | collection + situational analysis | analyst pipeline | Yes | verified |
+| [PANO](https://github.com/ALW1EZ/PANO) | graph/timeline investigation | graph + AI assistant | Yes | verified |
+| [OSINTai](https://github.com/gs-ai/OSINTai) | local-first crawling | evidence pipeline + graph export | Yes | verified |
+| [WorldView](https://github.com/Hunter5Thompson/OSINT) | tactical GEOINT | LangGraph + Qdrant + Neo4j | Yes | verified |
+| [Robin](https://github.com/apurvsinghgautam/robin) | dark-web research | web/CLI + MCP | Optional | verified |
+| [OWASP Social OSINT Agent](https://github.com/bm-github/owasp-social-osint-agent) | SOCMINT | autonomous text/vision agent | No | verified |
+| [FETIH](https://github.com/MustafaKemal0146/fetih) | security + OSINT agent | skills + multi-agent | Optional | verified |
+| [Unburden](https://github.com/ghostvyle/Unburden) | local security orchestration | local LLM + MCP | Yes | verified |
+| [Banshee-AI](https://github.com/Vulnpire/Banshee-AI) | search-based OSINT | AI-assisted CLI pipeline | No | verified |
+| [GreyNoise MCP](https://github.com/GreyNoise-Intelligence/greynoise-mcp-server) | threat intelligence | MCP server | No | verified |
+| [Theosight](https://www.eos-applications.com/) | military OSINT | structured analyst workflow | Yes | verified |
 
-Machine-readable records live in catalog/tools.json.
+Machine-readable records live in `catalog/tools.json`.
 
 ## Verification levels
 
@@ -146,7 +165,9 @@ OSINTAI/
 ├── ROADMAP.md
 ├── catalog/
 │   ├── tools.json
-│   └── research.json
+│   ├── research.json
+│   ├── training.json
+│   └── collections.json
 ├── docs/
 │   ├── taxonomy.md
 │   ├── reference-architecture.md
@@ -154,9 +175,14 @@ OSINTAI/
 │   ├── mcp-security.md
 │   ├── governance.md
 │   ├── learning-path.md
+│   ├── ecosystem-v0.2.md
+│   ├── ai-infrastructure-osint.md
+│   ├── specialized-domains.md
 │   └── verification-notes.md
 ├── schemas/
-│   └── tool.schema.json
+│   ├── tool.schema.json
+│   ├── collection.schema.json
+│   └── training.schema.json
 ├── scripts/
 │   └── validate_catalog.py
 └── .github/
@@ -185,6 +211,9 @@ Structured citations and canonical links live in catalog/research.json.
 - Use MCP safely: docs/mcp-security.md
 - Build responsible workflows: docs/governance.md
 - Learn progressively: docs/learning-path.md
+- Explore the verified ecosystem: docs/ecosystem-v0.2.md
+- Map AI infrastructure defensively: docs/ai-infrastructure-osint.md
+- Compare specialized domains: docs/specialized-domains.md
 - See what was excluded and why: docs/verification-notes.md
 
 ## Scope and ethics

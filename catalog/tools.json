@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "last_reviewed": "2026-10-01",
   "status_definitions": {
     "verified": "Canonical repository/source inspected and core description grounded in it.",
@@ -180,6 +180,246 @@
       "status": "verified",
       "verification": "README inspected",
       "notes": "Research and OSINT collection pipeline with LLM synthesis and local statistical fallback.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "osintai-gs-ai",
+      "name": "OSINTai",
+      "url": "https://github.com/gs-ai/OSINTai",
+      "category": [
+        "local-first",
+        "crawler",
+        "evidence-analysis",
+        "graph-analysis"
+      ],
+      "architecture": [
+        "cli",
+        "pipeline",
+        "graph"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "local-model-optional"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "Canonical repository README inspected; current README identifies v4.2.0 and local-first Ollama architecture.",
+      "notes": "Asynchronous OSINT crawler with deterministic post-crawl analysis, evidence-labelled findings, correlations, timelines and graph export. A separate UberGuidoZ/osintai lineage mirrors related v4 material; provenance is documented separately.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "robin-dark-web-osint",
+      "name": "Robin",
+      "url": "https://github.com/apurvsinghgautam/robin",
+      "category": [
+        "dark-web-osint",
+        "research-assistant",
+        "mcp"
+      ],
+      "architecture": [
+        "cli",
+        "web-ui",
+        "mcp-server"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted",
+        "local-model-optional",
+        "cloud-model-optional"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "Canonical repository README inspected.",
+      "notes": "AI-assisted dark-web OSINT research tool with multi-model support, Streamlit UI, MCP support and grounded follow-up analysis. Cataloged for lawful investigative use; operational access instructions are intentionally not reproduced here.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "worldview-hunter5thompson",
+      "name": "WorldView",
+      "url": "https://github.com/Hunter5Thompson/OSINT",
+      "category": [
+        "geoint",
+        "situational-awareness",
+        "multi-agent-rag",
+        "local-first"
+      ],
+      "architecture": [
+        "multi-agent",
+        "rag",
+        "knowledge-graph",
+        "web-ui"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "local-model"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "Canonical repository README inspected.",
+      "notes": "Self-hosted tactical intelligence platform using CesiumJS, LangGraph, local vLLM inference, Qdrant and Neo4j with live aviation, maritime, satellite and earthquake feeds.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "fetih",
+      "name": "FETIH",
+      "url": "https://github.com/MustafaKemal0146/fetih",
+      "category": [
+        "agentic-security",
+        "osint",
+        "automation",
+        "skills"
+      ],
+      "architecture": [
+        "autonomous-agent",
+        "multi-agent",
+        "cli",
+        "desktop"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted",
+        "local-model-optional",
+        "cloud-model-optional"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "Canonical repository README inspected; claims of 20+ AI providers and 912+ skills are maintainer-reported as of review date.",
+      "notes": "Cybersecurity AI agent supporting OSINT among broader security workflows, with persistent memory, skills, desktop/terminal interfaces and local-model support.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "unburden",
+      "name": "Unburden",
+      "url": "https://github.com/ghostvyle/Unburden",
+      "category": [
+        "agentic-security",
+        "osint",
+        "mcp",
+        "local-first"
+      ],
+      "architecture": [
+        "autonomous-agent",
+        "mcp-client",
+        "web-ui"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted",
+        "local-model"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "Canonical repository README inspected; maintainer reports 84 integrated security tools including 61 OSINT tools.",
+      "notes": "Local-LLM security orchestration platform using Qwen via Ollama, LlamaIndex and multiple MCP servers. OSINT capabilities are cataloged separately from its broader penetration-testing features.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "banshee-ai",
+      "name": "Banshee-AI",
+      "url": "https://github.com/Vulnpire/Banshee-AI",
+      "category": [
+        "search-based-osint",
+        "reconnaissance",
+        "automation"
+      ],
+      "architecture": [
+        "cli",
+        "pipeline"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "cloud-model-optional"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "Canonical repository README and Go module metadata inspected.",
+      "notes": "Go-based AI-assisted search and OSINT CLI that generates and refines search queries, organizes findings and supports repeatable authorized discovery workflows.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "owasp-social-osint-agent",
+      "name": "OWASP Social OSINT Agent",
+      "url": "https://github.com/bm-github/owasp-social-osint-agent",
+      "category": [
+        "socmint",
+        "multimodal",
+        "agentic-osint"
+      ],
+      "architecture": [
+        "autonomous-agent",
+        "web-ui",
+        "cli"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "cloud-model-compatible"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "Canonical repository README inspected.",
+      "notes": "Autonomous social-media OSINT agent with text and vision analysis, cross-platform collection, evidence-linked media analysis, offline cached-analysis mode and indirect prompt-injection mitigations.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "greynoise-mcp-server",
+      "name": "GreyNoise MCP Server",
+      "url": "https://github.com/GreyNoise-Intelligence/greynoise-mcp-server",
+      "category": [
+        "threat-intelligence",
+        "mcp",
+        "infrastructure-intelligence"
+      ],
+      "architecture": [
+        "mcp-server"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted-client",
+        "remote-api"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "Official GreyNoise repository and documentation inspected.",
+      "notes": "Official MCP server exposing GreyNoise threat-intelligence capabilities including IP context, GNQL, tags, CVEs, temporal analysis and entitlement-dependent operational actions.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "theosight",
+      "name": "Theosight",
+      "url": "https://www.eos-applications.com/",
+      "category": [
+        "military-osint",
+        "structured-intelligence",
+        "commercial",
+        "local-first"
+      ],
+      "architecture": [
+        "analyst-workflow",
+        "local-llm",
+        "structured-reporting"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "offline-capable",
+        "commercial"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "Official Eos Applications product page inspected.",
+      "notes": "Commercial military-OSINT platform emphasizing structured intelligence, per-field provenance, NATO-oriented schemas and sovereign/on-prem deployment. The earlier claim that launch is planned for 2027 was not retained because the product is already presented publicly as an active offering.",
       "last_reviewed": "2026-10-01"
     }
   ]
