@@ -159,6 +159,18 @@ The official initiative page confirms a developing decentralized OSINT/intellige
 
 **Decision:** retain as **candidate**. Architectural claims such as tokenized intelligence and post-quantum components require feature-level verification.
 
+### MOSAIV performance claim
+
+The paper identity, venue and DOI are verified. The supplied claim of “10/10 GPS coordinate accuracy” was not independently confirmed from the accessible canonical metadata during this review.
+
+**Decision:** keep the paper and architecture verified, but do not promote that exact performance figure until it can be traced directly to the paper text or authors' official artifact.
+
+### PromptINT tooling
+
+The SANS talk and methodology are verified. The talk also announces an open-source collection/indexing tool, but a canonical repository was not independently established during this review.
+
+**Decision:** verify PromptINT as a methodology/talk; do not invent or assign a tool repository.
+
 ### Ægis
 
 DBLP and DOI metadata verify **Ægis: AI-Enhanced OSINT for Multimedia Verification** as an ACM Multimedia 2025 paper.
