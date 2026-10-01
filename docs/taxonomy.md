@@ -92,6 +92,23 @@ A distinct domain studies publicly observable AI systems and ecosystems, includi
 
 This category is for defensive, research and intelligence purposes. Collection must remain lawful and proportionate.
 
+
+## Paradigm layer
+
+OSINTAI also classifies systems by the **paradigm they represent**, because two tools can perform similar tasks while embodying very different operational assumptions.
+
+| Paradigm | Core idea |
+|---|---|
+| **Autonomous & Agentic OSINT** | models plan, select bounded tools and iterate over evidence |
+| **Local-First & Zero-API OSINT** | sensitive inference and data remain under analyst control while external dependencies are minimized |
+| **Emerging-Source Intelligence** | new value is extracted from overlooked source classes such as prompt leaks, AI-system metadata or torrent metadata |
+| **Continuous Multimodal Intelligence** | systems reason across live or changing video, imagery, speech, geospatial and text streams |
+| **Decentralized Intelligence Networks** | intelligence exchange or validation is distributed through mesh, peer-to-peer or decentralized infrastructure |
+
+These paradigms are **not maturity rankings**. A decentralized or autonomous system is not automatically superior to a bounded analyst-copilot workflow.
+
+See [paradigms.md](paradigms.md) and the machine-readable `catalog/paradigms.json`.
+
 ## Architecture classes
 
 | Class | Description |

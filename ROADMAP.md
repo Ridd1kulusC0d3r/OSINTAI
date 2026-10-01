@@ -16,7 +16,7 @@
 - [x] add curated collections catalog
 - [x] add verified training catalog
 - [x] add specialized-domain map
-- [ ] expand verified catalog to 50+ resources
+- [ ] expand verified catalog to 50+ resources (23 verified tools/platforms as of v0.3)
 - [ ] add model and provider taxonomy
 - [x] add multimodal OSINT resources
 - [x] add local-first stack matrix
@@ -26,7 +26,14 @@
 - [ ] add deprecated and archived resource handling
 - [ ] add multilingual documentation strategy
 
-## v0.3 — OSINTAI Benchmark
+## v0.3 — Paradigms & Benchmark Foundation
+- [x] add machine-readable paradigm catalog
+- [x] document autonomous and agentic OSINT
+- [x] document local-first and zero-API architecture
+- [x] document emerging intelligence sources
+- [x] document continuous multimodal intelligence
+- [x] document decentralized intelligence networks
+- [x] distinguish research prototypes from production platforms
 - [ ] publish benchmark specification
 - [ ] create deterministic extraction cases
 - [ ] create source-grounded research cases

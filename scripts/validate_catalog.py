@@ -139,12 +139,30 @@ def validate_training(data: dict) -> list[str]:
     return errors
 
 
+def validate_paradigms(data: dict) -> list[str]:
+    errors: list[str] = []
+    records = data.get("paradigms", [])
+    errors.extend(validate_unique(records, "id", "paradigms"))
+
+    for index, item in enumerate(records):
+        prefix = f"paradigms[{index}]"
+        for field in ("id", "name", "description", "signals", "examples", "risks"):
+            if field not in item:
+                errors.append(f"{prefix}: missing {field}")
+        for field in ("signals", "examples", "risks"):
+            if field in item and not isinstance(item[field], list):
+                errors.append(f"{prefix}: {field} must be a list")
+
+    return errors
+
+
 def main() -> int:
     errors: list[str] = []
     errors.extend(validate_tools(load("tools.json")))
     errors.extend(validate_research(load("research.json")))
     errors.extend(validate_collections(load("collections.json")))
     errors.extend(validate_training(load("training.json")))
+    errors.extend(validate_paradigms(load("paradigms.json")))
 
     if errors:
         print("Catalog validation failed:")
