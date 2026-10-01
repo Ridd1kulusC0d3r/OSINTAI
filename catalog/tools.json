@@ -1,0 +1,186 @@
+{
+  "version": "0.1",
+  "last_reviewed": "2026-10-01",
+  "status_definitions": {
+    "verified": "Canonical repository/source inspected and core description grounded in it.",
+    "candidate": "Discovered but not sufficiently validated.",
+    "archival": "Historical/inactive but still useful.",
+    "rejected": "Could not be substantiated or was materially misleading."
+  },
+  "tools": [
+    {
+      "id": "openosint",
+      "name": "OpenOSINT",
+      "url": "https://github.com/OpenOSINT/OpenOSINT",
+      "category": [
+        "agentic-osint",
+        "mcp",
+        "tool-orchestration"
+      ],
+      "architecture": [
+        "tool-calling-agent",
+        "cli",
+        "web-ui"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted",
+        "local-model-optional",
+        "cloud-model-optional"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "README inspected",
+      "notes": "Natural-language OSINT interface with modular tools and MCP support.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "taranis-ai",
+      "name": "Taranis AI",
+      "url": "https://github.com/taranis-ai/taranis-ai",
+      "category": [
+        "collection",
+        "situational-awareness",
+        "reporting"
+      ],
+      "architecture": [
+        "pipeline",
+        "analyst-workflow"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "README inspected",
+      "notes": "Collects OSINT content and uses NLP/AI enrichment within an analyst-oriented workflow.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "pano",
+      "name": "PANO",
+      "url": "https://github.com/ALW1EZ/PANO",
+      "category": [
+        "graph-analysis",
+        "timeline",
+        "multimodal",
+        "assistant"
+      ],
+      "architecture": [
+        "desktop",
+        "graph",
+        "ai-assistant"
+      ],
+      "protocols": [],
+      "deployment": [
+        "desktop",
+        "self-hosted"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "README inspected",
+      "notes": "Investigation platform combining graph, timeline, map and PANAI assistant capabilities.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "argus-os",
+      "name": "Argus OS",
+      "url": "https://github.com/AXRoux/argus-os",
+      "category": [
+        "agentic-osint",
+        "tool-orchestration"
+      ],
+      "architecture": [
+        "planner-agent",
+        "adapter-framework"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "local-model-optional",
+        "cloud-model-optional"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "README inspected",
+      "notes": "Agentic OSINT orchestration platform with adapters and configurable model providers.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "osint-mcp-server",
+      "name": "osint-mcp-server",
+      "url": "https://github.com/badchars/osint-mcp-server",
+      "category": [
+        "mcp",
+        "infrastructure-osint",
+        "tool-fabric"
+      ],
+      "architecture": [
+        "mcp-server"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "README inspected",
+      "notes": "Exposes multiple OSINT and infrastructure intelligence sources through MCP.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "mcp-dadosbr",
+      "name": "MCP DadosBR",
+      "url": "https://github.com/cristianoaredes/mcp-dadosbr",
+      "category": [
+        "mcp",
+        "brazil",
+        "public-data"
+      ],
+      "architecture": [
+        "mcp-server"
+      ],
+      "protocols": [
+        "MCP"
+      ],
+      "deployment": [
+        "self-hosted"
+      ],
+      "local_first": true,
+      "status": "verified",
+      "verification": "README inspected",
+      "notes": "MCP server connecting AI assistants to Brazilian public-data sources.",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "id": "focal-harvest",
+      "name": "Focal Harvest",
+      "url": "https://github.com/techno-neighbour/focal-harvest",
+      "category": [
+        "research",
+        "monitoring",
+        "collection",
+        "automation"
+      ],
+      "architecture": [
+        "cli",
+        "pipeline"
+      ],
+      "protocols": [],
+      "deployment": [
+        "self-hosted",
+        "cloud-model-optional"
+      ],
+      "local_first": false,
+      "status": "verified",
+      "verification": "README inspected",
+      "notes": "Research and OSINT collection pipeline with LLM synthesis and local statistical fallback.",
+      "last_reviewed": "2026-10-01"
+    }
+  ]
+}
