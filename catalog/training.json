@@ -1,0 +1,82 @@
+{
+  "version": "0.2",
+  "last_reviewed": "2026-10-01",
+  "resources": [
+    {
+      "id": "jeis-ai-in-intelligence-2026",
+      "title": "AI in Intelligence Course",
+      "provider": "Joint European Union Intelligence School (JEIS)",
+      "url": "https://jeis.hndgs.mil.gr/course-anouncements/",
+      "dates": "2026-11-02/2026-11-13",
+      "status": "verified",
+      "topics": [
+        "ai-assisted-osint",
+        "intelligence-cycle",
+        "bias",
+        "hallucinations",
+        "analysis",
+        "intelligence-production"
+      ],
+      "notes": "Ten-day residential pilot course in Athens under the European Security and Defence College; eligibility restrictions apply."
+    },
+    {
+      "id": "rru-ai-osint-batch1-2026",
+      "title": "Artificial Intelligence in Open-Source Intelligence (OSINT) — Batch 1",
+      "provider": "Rashtriya Raksha University / RISE",
+      "url": "https://rise.rru.ac.in/Course/663/728",
+      "dates": "2026-08-03/2026-08-07",
+      "status": "verified",
+      "topics": [
+        "ai-augmented-osint",
+        "verification",
+        "geolocation",
+        "translation",
+        "pattern-recognition"
+      ]
+    },
+    {
+      "id": "iai-osint-ai-9ed-2026",
+      "title": "Open Source Intelligence e intelligenza artificiale — 9.ed.",
+      "provider": "Istituto Affari Internazionali (IAI)",
+      "url": "https://www.iai.it/en/education/open-source-intelligence-e-intelligenza-artificiale-9ed",
+      "dates": "2026-03-25/2026-03-30",
+      "status": "verified",
+      "topics": [
+        "osint",
+        "artificial-intelligence",
+        "intelligence-analysis"
+      ],
+      "notes": "The user-supplied claim of a 10th edition on 19–23 October 2026 was not independently confirmed during this review; the verified 9th edition is cataloged instead."
+    },
+    {
+      "id": "cybersafe-poland-2026",
+      "title": "CyberSafe — cyberbezpieczeństwo, OSINT i AI w praktyce",
+      "provider": "Fundacja Filoxenia / PARP registry",
+      "url": "https://uslugirozwojowe.parp.gov.pl/wyszukiwarka/uslugi/podglad?id=3815992",
+      "dates": "2026-11-16/2026-11-28",
+      "status": "verified",
+      "topics": [
+        "osint",
+        "ai",
+        "information-verification",
+        "incident-response",
+        "privacy"
+      ]
+    },
+    {
+      "id": "coursera-intelligence-edge",
+      "title": "AI in Global Competition: The Intelligence Edge",
+      "provider": "Special Competitive Studies Project / Coursera",
+      "url": "https://www.coursera.org/learn/scsp-intelligence-ent",
+      "dates": "self-paced",
+      "status": "verified",
+      "topics": [
+        "ai",
+        "intelligence-cycle",
+        "osint",
+        "project-maven",
+        "strategic-analysis"
+      ]
+    }
+  ]
+}
