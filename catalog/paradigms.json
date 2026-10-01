@@ -1,0 +1,120 @@
+{
+  "version": "0.3",
+  "last_reviewed": "2026-10-01",
+  "paradigms": [
+    {
+      "id": "autonomous-agentic-osint",
+      "name": "Autonomous & Agentic OSINT",
+      "description": "Agents plan, select tools, iterate, correlate and synthesize under explicit scope and human review.",
+      "signals": [
+        "tool calling",
+        "adaptive planning",
+        "multi-agent coordination",
+        "bounded autonomy"
+      ],
+      "examples": [
+        "openosint",
+        "argus-os",
+        "argus-cotcollective",
+        "fetih",
+        "s2w-dri"
+      ],
+      "risks": [
+        "scope drift",
+        "prompt injection",
+        "tool misuse",
+        "automation bias"
+      ]
+    },
+    {
+      "id": "local-first-zero-api",
+      "name": "Local-First & Zero-API OSINT",
+      "description": "Inference and sensitive analysis are kept on analyst-controlled infrastructure while dependence on paid external APIs is minimized.",
+      "signals": [
+        "Ollama",
+        "LM Studio",
+        "self-hosted processing",
+        "local databases",
+        "no telemetry"
+      ],
+      "examples": [
+        "argus-cotcollective",
+        "osintai-gs-ai",
+        "intelhub-firefox",
+        "worldview-hunter5thompson"
+      ],
+      "risks": [
+        "stale local datasets",
+        "hardware constraints",
+        "false sense of privacy when external collection still occurs"
+      ]
+    },
+    {
+      "id": "emerging-source-intelligence",
+      "name": "Emerging-Source Intelligence",
+      "description": "New intelligence value is extracted from source classes that were previously overlooked or treated as operational exhaust.",
+      "signals": [
+        "LLM conversation leaks",
+        "system-prompt exposure",
+        "torrent metadata",
+        "AI service metadata"
+      ],
+      "examples": [
+        "promptint-sans-2026",
+        "torrent-metadata-osint-2026"
+      ],
+      "risks": [
+        "privacy harm",
+        "misattribution",
+        "context collapse",
+        "legal uncertainty"
+      ]
+    },
+    {
+      "id": "continuous-multimodal-intelligence",
+      "name": "Continuous Multimodal Intelligence",
+      "description": "Systems ingest and verify continuously changing video, imagery, audio, geospatial and text streams instead of analyzing isolated artifacts.",
+      "signals": [
+        "live video",
+        "vision models",
+        "transcription",
+        "geolocation",
+        "sensor/feed fusion"
+      ],
+      "examples": [
+        "autonomous-video-hunter-defcon33",
+        "mosaiv-2026",
+        "aegis-multimedia-osint-2025",
+        "worldview-hunter5thompson"
+      ],
+      "risks": [
+        "false positives at scale",
+        "temporal drift",
+        "sensor/source uncertainty",
+        "opaque model inference"
+      ]
+    },
+    {
+      "id": "decentralized-intelligence-networks",
+      "name": "Decentralized Intelligence Networks",
+      "description": "Intelligence exchange, validation or coordination is distributed across peer-to-peer or decentralized infrastructure.",
+      "signals": [
+        "mesh communication",
+        "distributed validation",
+        "Nostr",
+        "IPFS",
+        "testnet governance"
+      ],
+      "examples": [
+        "shadowbroker-infonet",
+        "starcom"
+      ],
+      "risks": [
+        "trust bootstrapping",
+        "source poisoning",
+        "identity abuse",
+        "unproven privacy guarantees"
+      ]
+    }
+  ]
+}
