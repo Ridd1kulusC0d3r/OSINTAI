@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "last_reviewed": "2026-10-01",
   "references": [
     {
@@ -175,6 +175,71 @@
       ],
       "verification_status": "candidate",
       "notes": "Conference-paper metadata was located through secondary indexing; canonical proceedings/DOI still need direct verification."
+    },
+    {
+      "id": "autonomous-video-hunter-defcon33",
+      "title": "Autonomous Video Hunter: AI Agents for Real-Time OSINT",
+      "year": 2025,
+      "type": "conference-talk-research-prototype",
+      "url": "https://reconvillage.org/reconvillage-2025-defcon-33/talks/autonomous-video-hunter-ai-agents-for-real-time-osint",
+      "topics": [
+        "video-osint",
+        "real-time",
+        "multi-agent",
+        "computer-vision",
+        "transcription"
+      ],
+      "verification_status": "verified",
+      "notes": "Recon Village at DEF CON 33 talk by Kevin Dela Rosa. Describes Python-orchestrated AI agents for real-time analysis of live video streams. Cataloged as a presented prototype/talk, not a production platform."
+    },
+    {
+      "id": "promptint-sans-2026",
+      "title": "PromptINT: Using Prompt Leaks as a New Source of OSINT Intelligence",
+      "year": 2026,
+      "type": "summit-talk-methodology",
+      "url": "https://www.youtube.com/watch?v=76iQJMgrXco",
+      "topics": [
+        "promptint",
+        "llm-leaks",
+        "system-prompts",
+        "emerging-sources",
+        "privacy"
+      ],
+      "verification_status": "verified",
+      "notes": "Presented at SANS OSINT Summit 2026. Frames exposed LLM conversations and leaked system prompts as an emerging source class. OSINTAI treats collection as an ethical/privacy-sensitive research area."
+    },
+    {
+      "id": "torrent-metadata-osint-2026",
+      "title": "Breadcrumbs in the Digital Forest: Tracing Criminals through Torrent Metadata with OSINT",
+      "year": 2026,
+      "type": "preprint",
+      "url": "https://arxiv.org/abs/2601.01492",
+      "doi": "10.48550/arXiv.2601.01492",
+      "topics": [
+        "torrent-metadata",
+        "behavioral-analysis",
+        "profiling",
+        "digital-forensics",
+        "osint"
+      ],
+      "verification_status": "verified-preprint",
+      "notes": "Proof-of-concept research on public torrent metadata as an OSINT signal. Findings are research results, not a general-purpose attribution guarantee."
+    },
+    {
+      "id": "aegis-multimedia-osint-2025",
+      "title": "Ægis: AI-Enhanced OSINT for Multimedia Verification",
+      "year": 2025,
+      "type": "conference-paper",
+      "url": "https://doi.org/10.1145/3746027.3762034",
+      "doi": "10.1145/3746027.3762034",
+      "topics": [
+        "multimedia-verification",
+        "forensics",
+        "evidence-validation",
+        "osint"
+      ],
+      "verification_status": "verified",
+      "notes": "ACM Multimedia 2025 paper on AI-enhanced OSINT for multimedia verification."
     }
   ]
 }
