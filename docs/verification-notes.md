@@ -97,6 +97,80 @@ The verified IAI source located during review was the 9th edition held 25–30 M
 
 **Decision:** catalog the verified 9th edition and leave the 10th-edition claim out until a canonical announcement appears.
 
+
+## v0.3 paradigm review
+
+### Argus name collision
+
+Two different verified projects now exist in the catalog:
+
+- **AXRoux/argus-os** — agentic OSINT orchestration with a pluggable adapter model and optional cloud/local model providers.
+- **cotcollective/argus** — a separate local-first OSINT framework centered on Ollama and keyless/free sources.
+
+The cotcollective README headline says **13 modules**, while the current module table enumerates **14 entries** after a newer phishing-analysis module was added.
+
+**Decision:** keep the projects as separate catalog entities and flag the module-count inconsistency instead of repeating “13” as timeless fact.
+
+### Autonomous Video Hunter
+
+The project was verified as a **Recon Village talk at DEF CON 33 (2025)** describing a real-time video OSINT research prototype.
+
+**Decision:** catalog it under research/prototype, not as a production-ready downloadable platform.
+
+### PromptINT
+
+SANS materials confirm PromptINT as a methodology presented at the **2026 OSINT Summit** for treating exposed LLM conversations and leaked system prompts as a new OSINT source class.
+
+**Decision:** catalog it as an emerging-source methodology and apply explicit privacy/proportionality cautions.
+
+### IntelHub
+
+Mozilla Add-ons documents IntelHub 5.0.2 with a local LM Studio-backed OSINT agent, local file hashing/metadata processing and web search.
+
+**Decision:** verified, with an important wording correction: local inference can remain on-device, but live web search still performs network requests.
+
+### AIL Framework
+
+Current AIL documentation confirms collection from clear web, Tor, I2P, chats, files and feeds; OCR/QR processing; AI-assisted image descriptions; and Qwen2.5-VL as the model used for image description in the official FAQ.
+
+**Decision:** verified. The earlier “80+ OCR languages” figure was not promoted because current official documentation was not sufficiently explicit about that exact count.
+
+### The Big Brother
+
+The current canonical repository identifies the public release as **V7.0 (NEXUS)** and advertises 52 engines across 26 tabs.
+
+**Decision:** catalog as a verified **dual-use suite**, not as a purely passive OSINT platform. The older V6/28-module description is superseded.
+
+### ShadowBroker / InfoNet
+
+The canonical repository verifies InfoNet as an experimental decentralized intelligence mesh/testnet.
+
+**Decision:** verified with a strong maturity warning. The project explicitly states current privacy guarantees are incomplete and warns users to treat channels as public.
+
+### NovBase-VTX
+
+A public Hugging Face organization page documents the proposed five-layer architecture and eight parallel swarm units, but the core implementation is private.
+
+**Decision:** retain as **candidate** until code, reproducible evaluation or independent technical evidence becomes available.
+
+### Starcom
+
+The official initiative page confirms a developing decentralized OSINT/intelligence platform, while explicitly stating it is **not yet a fully operational MVP**.
+
+**Decision:** retain as **candidate**. Architectural claims such as tokenized intelligence and post-quantum components require feature-level verification.
+
+### Ægis
+
+DBLP and DOI metadata verify **Ægis: AI-Enhanced OSINT for Multimedia Verification** as an ACM Multimedia 2025 paper.
+
+**Decision:** verified research entry.
+
+### Torrent Metadata OSINT
+
+The 2026 arXiv paper *Breadcrumbs in the Digital Forest* is verified as a research preprint on public torrent metadata as an OSINT signal.
+
+**Decision:** classify it as experimental metadata intelligence. Do not equate a network observation with a confirmed human identity.
+
 ## Verification policy
 
 A tool can be marked **verified** when at least one canonical source is inspected and its key claims are directly supported.
