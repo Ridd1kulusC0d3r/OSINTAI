@@ -1,0 +1,86 @@
+{
+  "version": "0.1",
+  "last_reviewed": "2026-10-01",
+  "references": [
+    {
+      "id": "palmieri-2026-taxonomy",
+      "title": "Agentic and Generative AI for Open-Source Intelligence and Cyber Investigations: Taxonomy, Evaluation, Challenges, and Future Directions",
+      "year": 2026,
+      "type": "preprint-survey",
+      "url": "https://arxiv.org/abs/2607.03233",
+      "doi": "10.48550/arXiv.2607.03233",
+      "topics": [
+        "agentic-ai",
+        "osint",
+        "evaluation",
+        "cyber-investigations"
+      ]
+    },
+    {
+      "id": "palmieri-2025-framework",
+      "title": "A Framework for Embedding Generative and Agentic AI in Open Source Intelligence",
+      "year": 2025,
+      "type": "conference-paper",
+      "url": "https://doi.org/10.1109/BCCA66705.2025.11229637",
+      "doi": "10.1109/BCCA66705.2025.11229637",
+      "topics": [
+        "agentic-ai",
+        "osint",
+        "architecture",
+        "human-review"
+      ]
+    },
+    {
+      "id": "nist-ai-600-1",
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+      "year": 2024,
+      "type": "standard-guidance",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "doi": "10.6028/NIST.AI.600-1",
+      "topics": [
+        "risk",
+        "governance",
+        "generative-ai"
+      ]
+    },
+    {
+      "id": "new-america-opif",
+      "title": "Preserving Privacy: An Impact Framework for Open-Source Intelligence (OSINT)",
+      "year": 2025,
+      "type": "framework",
+      "url": "https://www.newamerica.org/insights/preserving-privacy-an-impact-framework/",
+      "topics": [
+        "privacy",
+        "osint",
+        "ai",
+        "governance"
+      ]
+    },
+    {
+      "id": "berkeley-protocol",
+      "title": "Berkeley Protocol on Digital Open Source Investigations",
+      "year": 2020,
+      "type": "protocol",
+      "url": "https://humanrights.berkeley.edu/publications/berkeley-protocol-on-digital-open-source-investigations/",
+      "topics": [
+        "verification",
+        "evidence",
+        "preservation",
+        "ethics"
+      ]
+    },
+    {
+      "id": "owasp-agentic-top10-2026",
+      "title": "OWASP Top 10 for Agentic Applications for 2026",
+      "year": 2025,
+      "type": "security-guidance",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+      "topics": [
+        "agent-security",
+        "tool-use",
+        "supply-chain",
+        "prompt-injection"
+      ]
+    }
+  ]
+}
