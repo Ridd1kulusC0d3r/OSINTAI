@@ -1,0 +1,67 @@
+{
+  "version": "0.2",
+  "last_reviewed": "2026-10-01",
+  "collections": [
+    {
+      "id": "the-osint-toolbox-ai-resources",
+      "name": "The OSINT Toolbox — AI Resources",
+      "url": "https://github.com/The-Osint-Toolbox/AI-Resources",
+      "status": "verified",
+      "focus": [
+        "deep-research",
+        "reverse-image-search",
+        "ocr",
+        "search",
+        "translation",
+        "local-ai"
+      ],
+      "notes": "Broad curator of AI tools useful to OSINT; useful as discovery input, not as an evidence authority."
+    },
+    {
+      "id": "awesome-ai-osint-ubikron",
+      "name": "Awesome AI OSINT",
+      "url": "https://github.com/ubikron/Awesome-AI-OSINT",
+      "status": "verified",
+      "focus": [
+        "articles",
+        "videos",
+        "tools",
+        "geoint",
+        "socmint",
+        "ai-search"
+      ],
+      "notes": "Actively curated AI-for-OSINT resource list."
+    },
+    {
+      "id": "awesome-osint-mcp-servers-soxoj",
+      "name": "Awesome OSINT MCP Servers",
+      "url": "https://github.com/soxoj/awesome-osint-mcp-servers",
+      "status": "verified",
+      "focus": [
+        "mcp",
+        "socmint",
+        "company-intelligence",
+        "threat-intelligence",
+        "geospatial",
+        "research",
+        "blockchain"
+      ],
+      "notes": "Curated directory of OSINT-oriented MCP servers organized by intelligence domain."
+    },
+    {
+      "id": "7waysecurity-ai-osint",
+      "name": "AI OSINT",
+      "url": "https://github.com/7WaySecurity/ai_osint",
+      "status": "verified",
+      "focus": [
+        "ai-infrastructure",
+        "mcp-security",
+        "mlops",
+        "vector-databases",
+        "detection",
+        "threat-intelligence"
+      ],
+      "notes": "Defensive and authorized-testing focused collection for exposed AI/ML infrastructure. The project explicitly scopes sensitive queries with a KEYWORD convention and responsible-use guidance."
+    }
+  ]
+}
