@@ -1,0 +1,33 @@
+name: Validate catalog
+
+on:
+  push:
+    paths:
+      - "catalog/**"
+      - "schemas/**"
+      - "scripts/validate_catalog.py"
+      - ".github/workflows/validate-catalog.yml"
+  pull_request:
+    paths:
+      - "catalog/**"
+      - "schemas/**"
+      - "scripts/validate_catalog.py"
+      - ".github/workflows/validate-catalog.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate catalogs
+        run: python scripts/validate_catalog.py
