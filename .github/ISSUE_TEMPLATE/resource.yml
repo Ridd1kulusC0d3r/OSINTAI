@@ -1,0 +1,58 @@
+name: Suggest an OSINT + AI resource
+description: Propose a tool, framework, MCP server, paper or reference for verification.
+title: "[Resource] "
+labels:
+  - resource-candidate
+body:
+  - type: dropdown
+    id: resource_type
+    attributes:
+      label: Resource type
+      options:
+        - Tool / Platform
+        - Agent / Multi-agent Framework
+        - MCP Server
+        - Local-first Project
+        - Research Paper
+        - Standard / Governance
+        - Dataset / Benchmark
+        - Learning Resource
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: canonical_url
+    attributes:
+      label: Canonical URL
+      placeholder: https://github.com/owner/project
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it add?
+      description: Describe the OSINT function and AI role without marketing language.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification evidence
+      description: Link the exact documentation supporting important claims such as tool count, local-only behavior, supported models or benchmark results.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I used a canonical or primary source where possible.
+          required: true
+        - label: I separated observed capabilities from marketing claims.
+          required: true
+        - label: This contribution is intended for lawful and ethical OSINT use.
+          required: true
