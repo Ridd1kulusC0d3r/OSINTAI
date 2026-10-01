@@ -5,7 +5,7 @@
 > A verification-first knowledge base for AI-augmented OSINT, agentic investigation, MCP ecosystems, local-first workflows, evaluation, governance, and OSINT focused on AI infrastructure.
 
 [![Catalog Validation](https://github.com/Ridd1kulusC0d3r/OSINTAI/actions/workflows/validate-catalog.yml/badge.svg)](https://github.com/Ridd1kulusC0d3r/OSINTAI/actions/workflows/validate-catalog.yml)
-![Status](https://img.shields.io/badge/status-v0.2%20ecosystem-blue)
+![Status](https://img.shields.io/badge/status-v0.3%20paradigms-blue)
 ![Focus](https://img.shields.io/badge/focus-OSINT%20%2B%20AI-purple)
 
 ## Why this repository exists
@@ -67,22 +67,31 @@ flowchart LR
 | **Governance** | privacy, proportionality, human oversight, evidence handling, AI risk |
 
 
-## v0.2 ecosystem expansion
+## v0.3 paradigm expansion
 
-OSINTAI now tracks the ecosystem across four machine-readable catalogs:
+OSINTAI now tracks not only tools, but the **architectural paradigms changing OSINT practice**:
 
-- **16 verified tools/platforms** in `catalog/tools.json`;
-- **12 research records** in `catalog/research.json`, with candidate status where primary metadata is still incomplete;
+- **25 tools/platforms** in `catalog/tools.json` — 23 verified and 2 candidates;
+- **16 research records** in `catalog/research.json`;
+- **5 paradigms** in `catalog/paradigms.json`;
 - **5 verified training resources** in `catalog/training.json`;
 - **4 verified curated collections** in `catalog/collections.json`.
 
-The expansion adds local-first crawlers, dark-web research, SOCMINT, GEOINT, tactical intelligence, AI-infrastructure OSINT, MCP threat-intelligence integrations and structured training references.
+The new paradigm layer covers:
 
-Start with the full [v0.2 Ecosystem Map](docs/ecosystem-v0.2.md).
+| Paradigm | Core shift |
+|---|---|
+| **Autonomous & Agentic OSINT** | models plan, call bounded tools and iterate over evidence |
+| **Local-First & Zero-API** | inference/data remain analyst-controlled while external dependencies are minimized |
+| **Emerging-Source Intelligence** | previously ignored sources become structured intelligence |
+| **Continuous Multimodal Intelligence** | video, imagery, audio, GEOINT and text are processed as ongoing streams |
+| **Decentralized Intelligence Networks** | intelligence exchange/validation moves into peer-to-peer or mesh architectures |
+
+See [OSINTAI Paradigms](docs/paradigms.md) and [Emerging Intelligence Sources](docs/emerging-intelligence-sources.md).
 
 ## Verified ecosystem snapshot
 
-The primary catalog now includes 16 verified tools and platforms. A compact cross-section is shown below; the full categorized view is in [docs/ecosystem-v0.2.md](docs/ecosystem-v0.2.md).
+The primary catalog now includes 25 tools/platforms, of which 23 are currently verified and 2 remain candidates. A compact cross-section is shown below; the full categorized view is in [docs/ecosystem-v0.2.md](docs/ecosystem-v0.2.md).
 
 | Project | Primary role | Architecture signal | Local-first | Verification |
 |---|---|---|---|---|
@@ -98,6 +107,12 @@ The primary catalog now includes 16 verified tools and platforms. A compact cros
 | [Banshee-AI](https://github.com/Vulnpire/Banshee-AI) | search-based OSINT | AI-assisted CLI pipeline | No | verified |
 | [GreyNoise MCP](https://github.com/GreyNoise-Intelligence/greynoise-mcp-server) | threat intelligence | MCP server | No | verified |
 | [Theosight](https://www.eos-applications.com/) | military OSINT | structured analyst workflow | Yes | verified |
+| [Argus Local-First](https://github.com/cotcollective/argus) | local-first OSINT | local agent + MCP | Yes | verified |
+| [osint-mcp](https://github.com/rjn32s/osint-mcp) | MCP tool fabric | 26 wrapped tools | Yes | verified |
+| [IntelHub](https://addons.mozilla.org/firefox/addon/intelhub/) | browser OSINT | local LM Studio agent | Yes | verified |
+| [AIL Framework](https://github.com/ail-project/ail-framework) | unstructured intelligence | crawl + OCR + correlation | Self-hosted | verified |
+| [DRI / XARVIS](https://www.s2w.inc/en/solutions/decision-ai) | criminal/security intelligence | domain agent + graph analysis | Commercial | verified |
+| [ShadowBroker / InfoNet](https://github.com/brockmisner/shadowbroker) | decentralized situational intelligence | live dashboard + experimental mesh | Yes | verified |
 
 Machine-readable records live in `catalog/tools.json`.
 
@@ -167,7 +182,8 @@ OSINTAI/
 │   ├── tools.json
 │   ├── research.json
 │   ├── training.json
-│   └── collections.json
+│   ├── collections.json
+│   └── paradigms.json
 ├── docs/
 │   ├── taxonomy.md
 │   ├── reference-architecture.md
@@ -178,11 +194,14 @@ OSINTAI/
 │   ├── ecosystem-v0.2.md
 │   ├── ai-infrastructure-osint.md
 │   ├── specialized-domains.md
+│   ├── paradigms.md
+│   ├── emerging-intelligence-sources.md
 │   └── verification-notes.md
 ├── schemas/
 │   ├── tool.schema.json
 │   ├── collection.schema.json
-│   └── training.schema.json
+│   ├── training.schema.json
+│   └── paradigm.schema.json
 ├── scripts/
 │   └── validate_catalog.py
 └── .github/
@@ -214,6 +233,8 @@ Structured citations and canonical links live in catalog/research.json.
 - Explore the verified ecosystem: docs/ecosystem-v0.2.md
 - Map AI infrastructure defensively: docs/ai-infrastructure-osint.md
 - Compare specialized domains: docs/specialized-domains.md
+- Understand the new paradigms: docs/paradigms.md
+- Track emerging source classes: docs/emerging-intelligence-sources.md
 - See what was excluded and why: docs/verification-notes.md
 
 ## Scope and ethics
