@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OSINTAI Training Resource Entry",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "provider",
+    "url",
+    "dates",
+    "status",
+    "topics"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "dates": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "verified",
+        "candidate",
+        "archival",
+        "rejected"
+      ]
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
