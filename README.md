@@ -72,27 +72,28 @@ Pick the row that sounds like you and follow it left to right.
 The intelligence cycle stays in charge. The model layer **assists** specific steps — it never owns the evidence.
 
 ```mermaid
-flowchart LR
-    A[Requirements] --> B[Collection]
-    B --> C[Preservation &<br/>Provenance]
-    C --> D[Extraction &<br/>Normalization]
-    D --> E[Entity<br/>Resolution]
-    E --> F[Enrichment]
-    F --> G[Correlation /<br/>Graph]
-    G --> H[Verification]
-    H --> I[Analysis &<br/>Hypotheses]
-    I --> J[Human Review]
-    J --> K[Reporting /<br/>Dissemination]
+flowchart TB
+    subgraph COLLECT["① Collect"]
+        direction LR
+        A[Requirements] --> B[Collection] --> C[Preservation &<br/>Provenance]
+    end
+    subgraph PROCESS["② Process"]
+        direction LR
+        D[Extraction &<br/>Normalization] --> E[Entity<br/>Resolution] --> F[Enrichment] --> G[Correlation /<br/>Graph]
+    end
+    subgraph DECIDE["③ Decide"]
+        direction LR
+        H[Verification] --> I[Analysis &<br/>Hypotheses] --> J[Human<br/>Review] --> K[Reporting /<br/>Dissemination]
+    end
 
-    L([LLM / Agent layer]) -. assists .-> A
-    L -. tool use .-> B
-    L -. transforms .-> D
-    L -. reasons over .-> G
-    L -. proposes .-> I
+    COLLECT ==> PROCESS ==> DECIDE
 
-    M[(Evidence Ledger)] --- C
-    M --- H
-    M --- K
+    L([LLM / Agent layer]) -. "plans · calls tools" .-> COLLECT
+    L -. "transforms · reasons over the graph" .-> PROCESS
+    L -. "proposes hypotheses — never verifies" .-> DECIDE
+
+    M[(Evidence Ledger)] --- COLLECT
+    M --- DECIDE
 
     classDef cycle fill:#0c4a6e,stroke:#38bdf8,color:#f0f9ff
     classDef human fill:#064e3b,stroke:#34d399,color:#ecfdf5
@@ -115,24 +116,27 @@ flowchart TB
     S[Sources] --> C[Collectors / MCP / APIs]
 
     subgraph EP["🗄️ Evidence plane — system of record"]
-        direction TB
-        P[Capture · hashing · timestamps · source metadata] --> N[Normalization · parsing · OCR · transcription]
-        N --> E[(Evidence store)]
-        E --> R[Entity resolution]
-        R --> G[Graph · search · retrieval]
+        direction LR
+        P[Capture · hashing ·<br/>timestamps · metadata] --> N[Normalization ·<br/>OCR · transcription]
+        N --> E[(Evidence<br/>store)]
+        E --> R[Entity<br/>resolution]
+        R --> G[Graph · search ·<br/>retrieval]
     end
 
     subgraph MP["🧠 Model plane — sandboxed"]
-        direction TB
-        L[LLM / agent sandbox] --> H[Hypotheses + confidence]
+        direction LR
+        L[LLM / agent<br/>sandbox] --> H[Hypotheses +<br/>confidence]
     end
 
-    C --> P
-    G --> L
-    H --> V{Verification<br/>against evidence}
-    E -. ground truth .-> V
-    V --> HR[Human review]
-    HR --> RP[Report with citations + provenance]
+    subgraph GATE["✅ Decision gate"]
+        direction LR
+        V[[Verification<br/>against evidence]] --> HR[Human<br/>review] --> RP[Report with citations<br/>+ provenance]
+    end
+
+    C ==> EP
+    EP ==>|retrieval| MP
+    MP ==>|hypotheses| GATE
+    EP -. ground truth .-> GATE
 
     classDef ev fill:#0c4a6e,stroke:#38bdf8,color:#f0f9ff
     classDef mdl fill:#2e1065,stroke:#a78bfa,color:#f5f3ff
