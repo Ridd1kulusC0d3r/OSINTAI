@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/specialized-domains.svg" alt="OSINTAI docs — Ecosystem track, document 8 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🗺️ **Ecosystem** &nbsp;·&nbsp; <sub>about 1 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # Specialized OSINT + AI Domains
 
 AI-assisted OSINT is splitting into specialized domains. Treating all of them as one generic 'AI tool' category hides the actual investigative tradeoffs.
@@ -67,3 +73,11 @@ Key evaluation questions:
 - offline deployment controls;
 - model traceability;
 - human review for consequential intelligence judgments.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Ecosystem map](ecosystem-v0.2.md) | [📚 All docs](README.md) | [Verification notes](verification-notes.md) |
+<!-- osintai:doc-footer:end -->

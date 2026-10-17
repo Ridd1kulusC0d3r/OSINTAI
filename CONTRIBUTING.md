@@ -48,7 +48,8 @@ When editing catalog/tools.json:
 - use ISO date format;
 - do not silently change verification status;
 - update last_reviewed;
-- run the validator locally with Python.
+- run the validator locally with Python: `python scripts/validate_catalog.py`;
+- regenerate the README tables, docs navigation and folder pages: `python scripts/render.py` (CI fails if anything generated is out of sync).
 
 ## Research contributions
 

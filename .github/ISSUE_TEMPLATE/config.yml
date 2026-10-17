@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the contribution rules
+    url: https://github.com/Ridd1kulusC0d3r/OSINTAI/blob/main/CONTRIBUTING.md
+    about: What counts as evidence and how records get verified.
+  - name: Browse the catalog
+    url: https://github.com/Ridd1kulusC0d3r/OSINTAI/blob/main/catalog/README.md
+    about: Check whether the resource is already listed before suggesting it.

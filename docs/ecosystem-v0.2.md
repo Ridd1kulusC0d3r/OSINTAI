@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/ecosystem-v0.2.svg" alt="OSINTAI docs — Ecosystem track, document 7 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🗺️ **Ecosystem** &nbsp;·&nbsp; <sub>about 3 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # OSINTAI Ecosystem Map — v0.2
 
 Reviewed: **2026-10-01**
@@ -87,4 +93,13 @@ Verified training references are maintained separately in `catalog/training.json
 
 ## Selection principle
 
-OSINTAI prefers a smaller verified catalog over a larger hallucinated one. Discovery is cheap. Provenance is the work.
+> [!IMPORTANT]
+> OSINTAI prefers a smaller verified catalog over a larger hallucinated one. Discovery is cheap. Provenance is the work.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Governance](governance.md) | [📚 All docs](README.md) | [Specialized domains](specialized-domains.md) |
+<!-- osintai:doc-footer:end -->

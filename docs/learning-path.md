@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/learning-path.svg" alt="OSINTAI docs — Foundations track, document 3 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🧱 **Foundations** &nbsp;·&nbsp; <sub>about 1 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # OSINT + AI Learning Path
 
 A practical progression from AI-assisted analysis to defensible agentic OSINT.
@@ -84,3 +90,11 @@ Contribute:
 - governance patterns.
 
 The strongest contribution is often a documented failure mode, because the ecosystem currently has more demos than rigorous operational evidence.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Reference architecture](reference-architecture.md) | [📚 All docs](README.md) | [Evaluation framework](evaluation-framework.md) |
+<!-- osintai:doc-footer:end -->

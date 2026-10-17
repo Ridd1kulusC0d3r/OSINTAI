@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/taxonomy.svg" alt="OSINTAI docs — Foundations track, document 1 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🧱 **Foundations** &nbsp;·&nbsp; <sub>about 4 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # OSINTAI Taxonomy
 
 This taxonomy classifies the OSINT + AI ecosystem by **investigative function**, **architecture**, **autonomy**, **deployment**, **evidence behavior** and **security boundary**.
@@ -175,3 +181,11 @@ Every agentic platform should be considered against:
 - audit gaps.
 
 See mcp-security.md and evaluation-framework.md.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [OSINTAI README](../README.md) | [📚 All docs](README.md) | [Reference architecture](reference-architecture.md) |
+<!-- osintai:doc-footer:end -->

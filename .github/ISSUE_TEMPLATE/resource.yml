@@ -4,6 +4,12 @@ title: "[Resource] "
 labels:
   - resource-candidate
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping map the ecosystem. OSINTAI **verifies before it promotes**: every claim below needs a canonical source.
+        New entries start as `candidate` and move to `verified` once a maintainer has checked the source.
+
   - type: dropdown
     id: resource_type
     attributes:
@@ -25,6 +31,7 @@ body:
     id: canonical_url
     attributes:
       label: Canonical URL
+      description: The project's own repository or documentation — not a blog post about it.
       placeholder: https://github.com/owner/project
     validations:
       required: true
@@ -33,15 +40,38 @@ body:
     id: description
     attributes:
       label: What does it add?
-      description: Describe the OSINT function and AI role without marketing language.
+      description: The OSINT function and the role AI plays in it, in plain language.
+      placeholder: Collects X from Y and uses a local model to extract entities into a graph.
     validations:
       required: true
+
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Where does inference run?
+      options:
+        - Locally / self-hosted only
+        - Local model optional, cloud by default
+        - Cloud / remote API only
+        - Commercial platform
+        - Not applicable or unknown
+
+  - type: dropdown
+    id: mcp
+    attributes:
+      label: MCP support
+      options:
+        - MCP server
+        - MCP client
+        - Both
+        - No
+        - Unknown
 
   - type: textarea
     id: evidence
     attributes:
       label: Verification evidence
-      description: Link the exact documentation supporting important claims such as tool count, local-only behavior, supported models or benchmark results.
+      description: Link the exact documentation behind important claims such as tool count, local-only behavior, supported models or benchmark results.
     validations:
       required: true
 

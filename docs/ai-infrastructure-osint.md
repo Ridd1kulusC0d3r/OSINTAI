@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/ai-infrastructure-osint.svg" alt="OSINTAI docs — Frontier track, document 12 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🔭 **Frontier** &nbsp;·&nbsp; <sub>about 2 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # AI Infrastructure OSINT
 
 AI infrastructure is now a legitimate OSINT subject in its own right. Analysts increasingly need to understand publicly observable AI services, model ecosystems, agent frameworks and MLOps dependencies.
@@ -34,7 +40,17 @@ flowchart LR
     G[Threat intelligence] --> D
     H[Advisories / CVEs] --> D
     I[Asset inventory] --> E
+    classDef ev fill:#0c4a6e,stroke:#38bdf8,color:#f0f9ff
+    classDef mdl fill:#2e1065,stroke:#a78bfa,color:#f5f3ff
+    classDef gate fill:#064e3b,stroke:#34d399,color:#ecfdf5
+    classDef ctl fill:#422006,stroke:#fbbf24,color:#fffbeb
+    classDef ext fill:#1e293b,stroke:#64748b,color:#f1f5f9
+    class A,B,C,D ev
+    class E,F gate
+    class G,H,I ext
 ```
+
+<sub>🟦 evidence &nbsp; 🟪 model / agent &nbsp; 🟩 human & verification &nbsp; 🟨 policy & scope &nbsp; ⬛ external sources</sub>
 
 ## Evidence requirements
 
@@ -63,3 +79,11 @@ These questions are useful for defensive exposure management without requiring e
 ## Do not collapse exposure into compromise
 
 A reachable service is not proof of vulnerability. A vulnerable version is not proof of exploitation. A leaked-looking string is not automatically a valid credential. OSINTAI keeps **observation**, **validation**, **risk inference** and **confirmed impact** as separate states.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Emerging intelligence sources](emerging-intelligence-sources.md) | [📚 All docs](README.md) | [Back to the README](../README.md) |
+<!-- osintai:doc-footer:end -->
