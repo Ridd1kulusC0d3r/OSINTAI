@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-labelledby="t d">
+  <title id="t">OSINTAI — Open Source Intelligence × Artificial Intelligence</title>
+  <desc id="d">Verification-first knowledge base for AI-augmented OSINT. Solid links are evidence; dashed links are model suggestions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B18"/>
+      <stop offset="1" stop-color="#121A35"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowv" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="20" fill="url(#grid)" opacity="0.55"/>
+
+  <!-- Left: wordmark -->
+  <g font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif">
+    <text x="72" y="92" fill="#94A3B8" font-size="17" letter-spacing="4" font-weight="600">OPEN SOURCE INTELLIGENCE × ARTIFICIAL INTELLIGENCE</text>
+    <text x="68" y="196" font-size="112" font-weight="800" letter-spacing="-2">
+      <tspan fill="url(#word)">OSINT</tspan><tspan fill="url(#ai)">AI</tspan>
+    </text>
+    <text x="72" y="244" fill="#E2E8F0" font-size="25" font-weight="500">A verification-first map of AI-augmented OSINT</text>
+  </g>
+
+  <!-- Chips -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#CBD5E1">
+    <g transform="translate(72 276)">
+      <rect width="96" height="32" rx="16" fill="#0F172A" stroke="#334155"/>
+      <text x="48" y="21" text-anchor="middle">agentic</text>
+    </g>
+    <g transform="translate(178 276)">
+      <rect width="66" height="32" rx="16" fill="#0F172A" stroke="#334155"/>
+      <text x="33" y="21" text-anchor="middle">MCP</text>
+    </g>
+    <g transform="translate(254 276)">
+      <rect width="124" height="32" rx="16" fill="#0F172A" stroke="#334155"/>
+      <text x="62" y="21" text-anchor="middle">local-first</text>
+    </g>
+    <g transform="translate(388 276)">
+      <rect width="120" height="32" rx="16" fill="#0F172A" stroke="#334155"/>
+      <text x="60" y="21" text-anchor="middle">multimodal</text>
+    </g>
+    <g transform="translate(518 276)">
+      <rect width="120" height="32" rx="16" fill="#0F172A" stroke="#334155"/>
+      <text x="60" y="21" text-anchor="middle">governance</text>
+    </g>
+  </g>
+
+  <!-- Right: evidence graph -->
+  <circle cx="1010" cy="178" r="150" fill="url(#glow)"/>
+  <circle cx="1170" cy="88" r="80" fill="url(#glowv)"/>
+
+  <!-- evidence links (solid) -->
+  <g stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" opacity="0.9">
+    <line x1="1010" y1="180" x2="900" y2="104"/>
+    <line x1="1010" y1="180" x2="880" y2="230"/>
+    <line x1="1010" y1="180" x2="960" y2="300"/>
+    <line x1="1010" y1="180" x2="1090" y2="282"/>
+    <line x1="900" y1="104" x2="880" y2="230"/>
+    <line x1="880" y1="230" x2="960" y2="300"/>
+    <line x1="960" y1="300" x2="1090" y2="282"/>
+  </g>
+  <!-- model links (dashed) -->
+  <g stroke="#A78BFA" stroke-width="2" stroke-dasharray="6 7" stroke-linecap="round">
+    <line x1="1168" y1="90" x2="1010" y2="180"/>
+    <line x1="1168" y1="90" x2="900" y2="104"/>
+    <line x1="1168" y1="90" x2="1150" y2="210"/>
+    <line x1="1150" y1="210" x2="1090" y2="282"/>
+  </g>
+
+  <!-- source nodes -->
+  <g fill="#0B1222" stroke="#5EEAD4" stroke-width="2.5">
+    <circle cx="900" cy="104" r="13"/>
+    <circle cx="880" cy="230" r="13"/>
+    <circle cx="960" cy="300" r="13"/>
+    <circle cx="1090" cy="282" r="13"/>
+  </g>
+  <!-- unverified hypothesis node -->
+  <circle cx="1150" cy="210" r="13" fill="#0B1222" stroke="#A78BFA" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <text x="1150" y="215" text-anchor="middle" fill="#A78BFA" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">?</text>
+
+  <!-- evidence ledger (center) -->
+  <circle cx="1010" cy="180" r="30" fill="#0B1222" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M996 181l9 9 18-20" fill="none" stroke="#5EEAD4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- model node -->
+  <g transform="translate(1168 90)">
+    <rect x="-34" y="-22" width="68" height="44" rx="12" fill="#1B1236" stroke="#A78BFA" stroke-width="2.5"/>
+    <text y="6" text-anchor="middle" fill="#E9D5FF" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" font-weight="700">LLM</text>
+  </g>
+
+  <!-- legend -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#94A3B8">
+    <line x1="830" y1="334" x2="862" y2="334" stroke="#38BDF8" stroke-width="2.2"/>
+    <text x="870" y="338">evidence</text>
+    <line x1="960" y1="334" x2="992" y2="334" stroke="#A78BFA" stroke-width="2" stroke-dasharray="6 7"/>
+    <text x="1000" y="338">model suggestion</text>
+  </g>
+</svg>

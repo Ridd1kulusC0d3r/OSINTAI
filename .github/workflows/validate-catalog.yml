@@ -6,12 +6,16 @@ on:
       - "catalog/**"
       - "schemas/**"
       - "scripts/validate_catalog.py"
+      - "scripts/render_readme.py"
+      - "README.md"
       - ".github/workflows/validate-catalog.yml"
   pull_request:
     paths:
       - "catalog/**"
       - "schemas/**"
       - "scripts/validate_catalog.py"
+      - "scripts/render_readme.py"
+      - "README.md"
       - ".github/workflows/validate-catalog.yml"
 
 permissions:
@@ -31,3 +35,6 @@ jobs:
 
       - name: Validate catalogs
         run: python scripts/validate_catalog.py
+
+      - name: Check README is in sync with the catalog
+        run: python scripts/render_readme.py --check
