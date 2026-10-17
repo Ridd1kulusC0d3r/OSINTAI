@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/verification-notes.svg" alt="OSINTAI docs — Ecosystem track, document 9 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🗺️ **Ecosystem** &nbsp;·&nbsp; <sub>about 6 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # Verification Notes
 
 OSINTAI intentionally separates **resource discovery** from **resource verification**.
@@ -203,3 +209,11 @@ Maintainer-reported numbers are recorded as such and should be rechecked as proj
 ## Why this matters
 
 OSINT practitioners work in an evidence discipline. A repository about AI should raise the standard for provenance, not lower it because the ecosystem moves quickly.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Specialized domains](specialized-domains.md) | [📚 All docs](README.md) | [Paradigms](paradigms.md) |
+<!-- osintai:doc-footer:end -->

@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/mcp-security.svg" alt="OSINTAI docs — Safe practice track, document 5 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🛡️ **Safe practice** &nbsp;·&nbsp; <sub>about 2 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # MCP for OSINT: Architecture and Security
 
 Model Context Protocol can turn OSINT tools into reusable capabilities for AI assistants. That is powerful, but it also moves tool execution closer to untrusted natural-language inputs and retrieved content.
@@ -16,7 +22,19 @@ flowchart LR
 
     G[Policy / Allowlist] --- C
     L[Audit Log] --- C
+    classDef ev fill:#0c4a6e,stroke:#38bdf8,color:#f0f9ff
+    classDef mdl fill:#2e1065,stroke:#a78bfa,color:#f5f3ff
+    classDef gate fill:#064e3b,stroke:#34d399,color:#ecfdf5
+    classDef ctl fill:#422006,stroke:#fbbf24,color:#fffbeb
+    classDef ext fill:#1e293b,stroke:#64748b,color:#f1f5f9
+    class U gate
+    class C mdl
+    class S1,S2,S3 ev
+    class D1,D2,D3 ext
+    class G,L ctl
 ~~~
+
+<sub>🟦 evidence &nbsp; 🟪 model / agent &nbsp; 🟩 human & verification &nbsp; 🟨 policy & scope &nbsp; ⬛ external sources</sub>
 
 ## Trust boundaries
 
@@ -96,4 +114,13 @@ These should be tested in the evaluation harness rather than relegated to a disc
 
 ## Practical principle
 
-**A model should not automatically trust a tool merely because the tool arrived through a standard protocol.**
+> [!IMPORTANT]
+> **A model should not automatically trust a tool merely because the tool arrived through a standard protocol.**
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Evaluation framework](evaluation-framework.md) | [📚 All docs](README.md) | [Governance](governance.md) |
+<!-- osintai:doc-footer:end -->

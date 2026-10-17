@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/governance.svg" alt="OSINTAI docs — Safe practice track, document 6 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🛡️ **Safe practice** &nbsp;·&nbsp; <sub>about 2 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # Governance, Privacy and Evidence Integrity
 
 This document is operational guidance, not legal advice.
@@ -86,4 +92,13 @@ Before publishing an intelligence product:
 
 ## Principle
 
-**Public availability does not eliminate privacy, proportionality or accuracy obligations.**
+> [!IMPORTANT]
+> **Public availability does not eliminate privacy, proportionality or accuracy obligations.**
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [MCP security](mcp-security.md) | [📚 All docs](README.md) | [Ecosystem map](ecosystem-v0.2.md) |
+<!-- osintai:doc-footer:end -->

@@ -1,0 +1,40 @@
+name: Report an outdated or wrong entry
+description: A catalog record, doc or claim no longer matches its source.
+title: "[Correction] "
+labels:
+  - verification
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections are as valuable as additions. Point to the record and to the source that contradicts it.
+
+  - type: input
+    id: record
+    attributes:
+      label: Which entry?
+      description: Tool name, catalog `id`, or the doc and section.
+      placeholder: osint-mcp-server — catalog/tools.json
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong?
+      options:
+        - Project moved, renamed or was archived
+        - Description or capability no longer accurate
+        - Verification status should change
+        - Broken link
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source showing the correct state
+      description: Link the canonical page and say what it shows. Include the date you checked.
+    validations:
+      required: true

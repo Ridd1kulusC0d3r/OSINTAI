@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/evaluation-framework.svg" alt="OSINTAI docs — Safe practice track, document 4 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🛡️ **Safe practice** &nbsp;·&nbsp; <sub>about 2 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # OSINTAI Evaluation Framework
 
 OSINT AI systems should be compared on evidence quality and operational behavior, not screenshots, model branding or the number of tools listed in a README.
@@ -142,3 +148,11 @@ Planned benchmark artifacts:
 - reproducible container environments;
 - JSON result format;
 - CI regression tests.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Learning path](learning-path.md) | [📚 All docs](README.md) | [MCP security](mcp-security.md) |
+<!-- osintai:doc-footer:end -->

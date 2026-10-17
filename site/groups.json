@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Agentic & orchestration platforms",
+    "emoji": "🤖",
+    "blurb": "Models plan, call bounded tools and iterate over evidence.",
+    "ids": [
+      "openosint",
+      "argus-os",
+      "argus-cotcollective",
+      "fetih",
+      "unburden",
+      "the-big-brother"
+    ]
+  },
+  {
+    "title": "MCP servers & tool fabrics",
+    "emoji": "🔌",
+    "blurb": "OSINT sources and utilities exposed to assistants through MCP.",
+    "ids": [
+      "osint-mcp-server",
+      "osint-mcp-rjn32s",
+      "mcp-dadosbr",
+      "greynoise-mcp-server"
+    ]
+  },
+  {
+    "title": "Local-first & evidence pipelines",
+    "emoji": "🏠",
+    "blurb": "Collection, extraction and correlation on analyst-controlled infrastructure.",
+    "ids": [
+      "osintai-gs-ai",
+      "taranis-ai",
+      "pano",
+      "focal-harvest",
+      "ail-framework",
+      "intelhub-firefox"
+    ]
+  },
+  {
+    "title": "Specialized investigation domains",
+    "emoji": "🎯",
+    "blurb": "Dark web, SOCMINT, GEOINT, search-based discovery, military and criminal intelligence.",
+    "ids": [
+      "robin-dark-web-osint",
+      "owasp-social-osint-agent",
+      "worldview-hunter5thompson",
+      "banshee-ai",
+      "theosight",
+      "s2w-dri"
+    ]
+  },
+  {
+    "title": "Decentralized & experimental",
+    "emoji": "🕸️",
+    "blurb": "Mesh / peer-to-peer intelligence networks and unaudited research claims.",
+    "ids": [
+      "shadowbroker-infonet",
+      "novbase-vtx",
+      "starcom"
+    ]
+  }
+]

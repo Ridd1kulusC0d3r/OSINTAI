@@ -49,7 +49,7 @@ When editing catalog/tools.json:
 - do not silently change verification status;
 - update last_reviewed;
 - run the validator locally with Python: `python scripts/validate_catalog.py`;
-- regenerate the catalog sections of the README: `python scripts/render_readme.py` (CI fails if the README is out of sync).
+- regenerate the README tables, docs navigation and folder pages: `python scripts/render.py` (CI fails if anything generated is out of sync).
 
 ## Research contributions
 

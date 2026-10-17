@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/emerging-intelligence-sources.svg" alt="OSINTAI docs — Frontier track, document 11 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🔭 **Frontier** &nbsp;·&nbsp; <sub>about 2 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # Emerging Intelligence Sources
 
 OSINTAI tracks not only new tools, but also **new source classes**. A source class matters when it creates investigative value that did not previously exist, or makes previously inaccessible information systematically searchable.
@@ -127,3 +133,11 @@ The key architectural requirement is that every derived representation remains l
 | **S5 Operationally defensible** | provenance, legal/privacy controls and reproducibility are mature |
 
 A new source is not valuable merely because it is novel. Novel garbage is still garbage, only with a conference slide.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Paradigms](paradigms.md) | [📚 All docs](README.md) | [AI infrastructure OSINT](ai-infrastructure-osint.md) |
+<!-- osintai:doc-footer:end -->

@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/reference-architecture.svg" alt="OSINTAI docs — Foundations track, document 2 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🧱 **Foundations** &nbsp;·&nbsp; <sub>about 3 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # Reference Architecture for AI-Augmented OSINT
 
 The reference architecture is intentionally **evidence-first**. AI is an analysis and orchestration layer, not the system of record.
@@ -46,7 +52,19 @@ flowchart TD
     LOG --- TB
     LOG --- AG
     LOG --- HR
+    classDef ev fill:#0c4a6e,stroke:#38bdf8,color:#f0f9ff
+    classDef mdl fill:#2e1065,stroke:#a78bfa,color:#f5f3ff
+    classDef gate fill:#064e3b,stroke:#34d399,color:#ecfdf5
+    classDef ctl fill:#422006,stroke:#fbbf24,color:#fffbeb
+    classDef ext fill:#1e293b,stroke:#64748b,color:#f1f5f9
+    class C1,C2,C3 ext
+    class CAP,EV,N,ER,KG,IX ev
+    class P,TB,AG,HY mdl
+    class V,HR,REP gate
+    class R,LOG ctl
 ~~~
+
+<sub>🟦 evidence &nbsp; 🟪 model / agent &nbsp; 🟩 human & verification &nbsp; 🟨 policy & scope &nbsp; ⬛ external sources</sub>
 
 ## Components
 
@@ -167,4 +185,13 @@ Recommended mandatory gates:
 
 ## Architecture principle
 
-**Models reason over evidence. They do not replace the evidence layer.**
+> [!IMPORTANT]
+> **Models reason over evidence. They do not replace the evidence layer.**
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Taxonomy](taxonomy.md) | [📚 All docs](README.md) | [Learning path](learning-path.md) |
+<!-- osintai:doc-footer:end -->

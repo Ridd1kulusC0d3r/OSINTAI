@@ -1,3 +1,9 @@
+<!-- osintai:doc-header:start -->
+<a href="README.md"><img src="../assets/docs/paradigms.svg" alt="OSINTAI docs — Frontier track, document 10 of 12" width="100%"></a>
+
+[OSINTAI](../README.md) › [Docs](README.md) › 🔭 **Frontier** &nbsp;·&nbsp; <sub>about 4 min read</sub>
+<!-- osintai:doc-header:end -->
+
 # OSINTAI Paradigms — v0.3
 
 The field is moving beyond “use an LLM to summarize search results.” OSINTAI v0.3 tracks the deeper architectural shifts that are changing how investigations are collected, processed, verified and distributed.
@@ -28,7 +34,18 @@ flowchart LR
     A3 --> E
     E --> S[Synthesis]
     S --> H[Human Review]
+    classDef ev fill:#0c4a6e,stroke:#38bdf8,color:#f0f9ff
+    classDef mdl fill:#2e1065,stroke:#a78bfa,color:#f5f3ff
+    classDef gate fill:#064e3b,stroke:#34d399,color:#ecfdf5
+    classDef ctl fill:#422006,stroke:#fbbf24,color:#fffbeb
+    classDef ext fill:#1e293b,stroke:#64748b,color:#f1f5f9
+    class R ctl
+    class P,A1,A2,A3,S mdl
+    class E ev
+    class H gate
 ```
+
+<sub>🟦 evidence &nbsp; 🟪 model / agent &nbsp; 🟩 human & verification &nbsp; 🟨 policy & scope &nbsp; ⬛ external sources</sub>
 
 The defining characteristic is not “many agents.” It is **delegated decision-making over tools and evidence**.
 
@@ -181,3 +198,11 @@ AI matters here because it can make previously opaque content searchable and cor
 | Unstructured intelligence | structure from messy content | AIL, multimodal pipelines |
 
 Machine-readable definitions live in `catalog/paradigms.json`.
+
+<!-- osintai:doc-footer:start -->
+---
+
+| ← Previous | | Next → |
+|:---|:---:|---:|
+| [Verification notes](verification-notes.md) | [📚 All docs](README.md) | [Emerging intelligence sources](emerging-intelligence-sources.md) |
+<!-- osintai:doc-footer:end -->

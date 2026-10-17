@@ -6,16 +6,22 @@ on:
       - "catalog/**"
       - "schemas/**"
       - "scripts/validate_catalog.py"
-      - "scripts/render_readme.py"
+      - "scripts/render.py"
       - "README.md"
+      - "docs/**"
+      - "assets/docs/**"
+      - "site/groups.json"
       - ".github/workflows/validate-catalog.yml"
   pull_request:
     paths:
       - "catalog/**"
       - "schemas/**"
       - "scripts/validate_catalog.py"
-      - "scripts/render_readme.py"
+      - "scripts/render.py"
       - "README.md"
+      - "docs/**"
+      - "assets/docs/**"
+      - "site/groups.json"
       - ".github/workflows/validate-catalog.yml"
 
 permissions:
@@ -36,5 +42,5 @@ jobs:
       - name: Validate catalogs
         run: python scripts/validate_catalog.py
 
-      - name: Check README is in sync with the catalog
-        run: python scripts/render_readme.py --check
+      - name: Check generated files are in sync
+        run: python scripts/render.py --check

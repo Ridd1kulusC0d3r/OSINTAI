@@ -18,6 +18,7 @@
 </p>
 
 <p align="center">
+  <a href="https://ridd1kulusc0d3r.github.io/OSINTAI/"><b>Browse the catalog site</b></a> &nbsp;·&nbsp;
   <a href="#-start-here">Start here</a> &nbsp;·&nbsp;
   <a href="#-the-osintai-model">Model</a> &nbsp;·&nbsp;
   <a href="#-ecosystem-catalog">Catalog</a> &nbsp;·&nbsp;
@@ -179,7 +180,7 @@ Deep dives: [Paradigms](docs/paradigms.md) · [Emerging intelligence sources](do
 
 ## 📚 Ecosystem catalog
 
-Every tool and platform in [`catalog/tools.json`](catalog/tools.json), grouped by role. Click a name to open its canonical source.
+Every tool and platform in [`catalog/tools.json`](catalog/tools.json), grouped by role. Click a name to open its canonical source — or use the [catalog site](https://ridd1kulusc0d3r.github.io/OSINTAI/) to search and filter by role, local-first and MCP support.
 
 <sub>✅ verified &nbsp; 🧪 candidate &nbsp; 🏠 local-first by design &nbsp; — not local-first (may still offer a local model option)</sub>
 
@@ -320,20 +321,24 @@ Primary sources and high-quality research, from [`catalog/research.json`](catalo
 
 ## 📂 Documentation
 
-| Document | Read it when you want to… |
-|---|---|
-| [Taxonomy](docs/taxonomy.md) | classify a tool by function, architecture, autonomy, deployment and security boundary |
-| [Reference architecture](docs/reference-architecture.md) | design an evidence-first platform where AI is not the system of record |
-| [Evaluation framework](docs/evaluation-framework.md) | compare systems on evidence quality and behavior, not screenshots |
-| [MCP security](docs/mcp-security.md) | expose OSINT tools to assistants without widening the attack surface |
-| [Governance](docs/governance.md) | apply purpose limitation, privacy and evidence integrity |
-| [Learning path](docs/learning-path.md) | progress from AI-assisted analysis to defensible agentic OSINT |
-| [Ecosystem map](docs/ecosystem-v0.2.md) | browse resources by investigative role and trust level |
-| [AI infrastructure OSINT](docs/ai-infrastructure-osint.md) | map publicly observable AI services defensively |
-| [Specialized domains](docs/specialized-domains.md) | understand trade-offs in dark web, SOCMINT, GEOINT and more |
-| [Paradigms](docs/paradigms.md) | follow the architectural shifts tracked since v0.3 |
-| [Emerging intelligence sources](docs/emerging-intelligence-sources.md) | track new source classes such as PromptINT |
-| [Verification notes](docs/verification-notes.md) | see which claims were excluded and why |
+Twelve guides in four tracks — the [docs hub](docs/README.md) has reading times and the suggested order.
+
+<!-- osintai:docs:start -->
+| Track | Document | Read it when you want to… |
+|---|---|---|
+| 🧱 **Foundations** | [Taxonomy](docs/taxonomy.md) | classify a tool by function, architecture, autonomy, deployment and security boundary |
+|  | [Reference architecture](docs/reference-architecture.md) | design an evidence-first platform where AI is not the system of record |
+|  | [Learning path](docs/learning-path.md) | progress from AI-assisted analysis to defensible agentic OSINT |
+| 🛡️ **Safe practice** | [Evaluation framework](docs/evaluation-framework.md) | compare systems on evidence quality and behavior, not screenshots |
+|  | [MCP security](docs/mcp-security.md) | expose OSINT tools to assistants without widening the attack surface |
+|  | [Governance](docs/governance.md) | apply purpose limitation, privacy and evidence integrity |
+| 🗺️ **Ecosystem** | [Ecosystem map](docs/ecosystem-v0.2.md) | browse resources by investigative role and trust level |
+|  | [Specialized domains](docs/specialized-domains.md) | understand trade-offs in dark web, SOCMINT, GEOINT and more |
+|  | [Verification notes](docs/verification-notes.md) | see which claims were excluded and why |
+| 🔭 **Frontier** | [Paradigms](docs/paradigms.md) | follow the architectural shifts tracked since v0.3 |
+|  | [Emerging intelligence sources](docs/emerging-intelligence-sources.md) | track new source classes such as PromptINT |
+|  | [AI infrastructure OSINT](docs/ai-infrastructure-osint.md) | map publicly observable AI services defensively |
+<!-- osintai:docs:end -->
 
 <details>
 <summary><b>Repository map</b></summary>
@@ -343,22 +348,23 @@ OSINTAI/
 ├── README.md               ← you are here
 ├── CONTRIBUTING.md         ← how to submit a verifiable resource
 ├── ROADMAP.md              ← what is done and what is next
-├── assets/                 ← banner and visual assets
-├── catalog/                ← machine-readable source of truth
+├── assets/                 ← banner, doc header strips, social preview
+├── catalog/                ← machine-readable source of truth (overview in catalog/README.md)
 │   ├── tools.json
 │   ├── research.json
 │   ├── training.json
 │   ├── collections.json
 │   └── paradigms.json
 ├── docs/                   ← analyst-facing guides (see table above)
-├── schemas/                ← JSON Schemas for every catalog
+├── schemas/                ← JSON Schemas for every catalog (field guide in schemas/README.md)
+├── site/                   ← searchable catalog website, published to GitHub Pages
 ├── scripts/
 │   ├── validate_catalog.py ← catalog validation (stdlib only)
-│   └── render_readme.py    ← regenerates the catalog sections of this README
+│   └── render.py           ← regenerates README tables, docs navigation and folder pages
 └── .github/
-    ├── ISSUE_TEMPLATE/resource.yml
+    ├── ISSUE_TEMPLATE/     ← suggest a resource · report an outdated entry
     ├── pull_request_template.md
-    └── workflows/validate-catalog.yml
+    └── workflows/          ← catalog validation · site publishing
 ```
 
 </details>
@@ -378,11 +384,11 @@ The project emphasizes proportionality, privacy, provenance, analyst accountabil
 
 ## 🤝 Contributing
 
-New resources are welcome — every contribution needs a **canonical source** and enough evidence to classify it. Read **[CONTRIBUTING.md](CONTRIBUTING.md)** first, or open a [resource issue](../../issues/new?template=resource.yml).
+New resources are welcome — every contribution needs a **canonical source** and enough evidence to classify it. Read **[CONTRIBUTING.md](CONTRIBUTING.md)** first, or open an issue to [suggest a resource](../../issues/new?template=resource.yml) or [report an outdated entry](../../issues/new?template=correction.yml).
 
 ```bash
 python scripts/validate_catalog.py   # check the JSON catalogs
-python scripts/render_readme.py      # refresh the catalog sections of this README
+python scripts/render.py             # refresh every generated table, page and doc header
 ```
 
 ---
